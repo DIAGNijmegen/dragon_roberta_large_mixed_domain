@@ -11,7 +11,7 @@ class DragonRobertaLargeMixedDomain(DragonBaseline):
         self.model_name = "joeranbosma/dragon-roberta-large-mixed-domain"
         self.per_device_train_batch_size = 1
         self.gradient_accumulation_steps = 8
-        self.gradient_checkpointing = True
+        self.gradient_checkpointing = False
         self.max_seq_length = 512
         self.learning_rate = 1e-05
 
